@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Haze — Simple, Well‑Structured Site</title>
+    <meta name="description" content="A simple, well‑structured starter website for quick projects." />
+    <meta name="theme-color" content="#0ea5e9" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home">Haze</a>
+
+        <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle menu">
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+        </button>
+
+        <nav class="primary-nav" aria-label="Primary">
+          <ul id="primary-nav" class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="home" class="site-main">
+      <section class="hero">
+        <div class="container">
+          <h1>Build something clear and focused</h1>
+          <p>
+            A clean starting point with semantic HTML, responsive CSS, and a dash of
+            JavaScript. No frameworks, just the essentials.
+          </p>
+          <a class="button primary" href="#features">Get Started</a>
+        </div>
+      </section>
+
+      <section id="features" class="section features">
+        <div class="container">
+          <h2>Features</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Semantic Layout</h3>
+              <p>Uses header, nav, main, section, and footer for structure.</p>
+            </article>
+            <article class="card">
+              <h3>Responsive by Default</h3>
+              <p>Fluid typography, flexible grid, and mobile‑first navigation.</p>
+            </article>
+            <article class="card">
+              <h3>Accessible Touches</h3>
+              <p>Keyboard‑friendly menu, clear focus outlines, and good contrast.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            This starter aims to be a practical baseline for small sites. Keep what you need,
+            delete what you don’t, and ship quickly.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>
+            Have feedback or ideas? Reach out at
+            <a href="mailto:hello@example.com">hello@example.com</a>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Haze. All rights reserved.</p>
+        <nav aria-label="Footer">
+          <ul class="footer-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="site.js" defer></script>
+  </body>
+  </html>
+
