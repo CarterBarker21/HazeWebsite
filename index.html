@@ -3,255 +3,357 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Haze Energy Solutions</title>
+  <title>Haze Game Tools | Competitive PC Enhancements</title>
+  <meta name="description" content="Haze delivers professional-grade training suites, analytics, and automation tools for the top Windows games so teams can dominate every lobby." />
+  <meta property="og:title" content="Haze Game Tools" />
+  <meta property="og:description" content="Win the meta with pro-caliber overlays, optimizers, and launchers tuned for the top 25 PC games." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://haze.gg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="brand">
-        <a href="#" class="brand__link" aria-label="Haze home">
-          <span class="brand__mark">H</span>
-          <span class="brand__text">Haze Energy</span>
-        </a>
-      </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- ========================================
+       Global Site Header & Navigation
+       ======================================== -->
+  <header class="site-header" id="top">
+    <div class="container header__inner">
+      <a href="index.html" class="brand" aria-label="Haze home">
+        <span class="brand__mark" aria-hidden="true">H</span>
+        <span class="brand__text">
+          <span class="brand__title">Haze</span>
+          <span class="brand__subtitle">Game Tools</span>
+        </span>
+      </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
         <span class="nav-toggle__bar"></span>
         <span class="nav-toggle__bar"></span>
         <span class="nav-toggle__bar"></span>
         <span class="sr-only">Toggle navigation</span>
       </button>
-      <nav class="site-nav" id="primary-nav">
+      <nav class="site-nav" id="primary-nav" aria-label="Primary">
         <ul class="site-nav__list">
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#platform">Platform</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact" class="button button--outline">Contact</a></li>
+          <li><a href="#success">Success</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="button button--outline" href="games.html">Game tool catalog</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero" id="top">
+  <main id="main">
+    <!-- ========================================
+         Hero
+         ======================================== -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
       <div class="container hero__grid">
         <div class="hero__content">
-          <p class="eyebrow">Trusted Solar Partner</p>
-          <h1>Powering tomorrow with resilient solar solutions.</h1>
-          <p>Haze delivers custom solar installations with a focus on reliability, transparency, and long-term performance. From consultation to activation, we guide you every step of the way.</p>
+          <p class="eyebrow">Command the meta</p>
+          <h1 id="hero-title">Battle-tested tools for the top Windows games.</h1>
+          <p>Haze equips competitive players and creators with automation, analytics, and mod management for the 25 most played PC titles in the United States. Unlock faster launches, smarter strategies, and unstoppable performance.</p>
           <div class="hero__actions">
-            <a href="#contact" class="button">Schedule a consult</a>
-            <a href="#services" class="button button--ghost">Explore services</a>
+            <a href="games.html" class="button">Explore game tools</a>
+            <a href="#contact" class="button button--ghost">Book a strategy call</a>
           </div>
+          <dl class="metric-grid" aria-label="Key Haze metrics">
+            <div class="metric">
+              <dt>2.5M+</dt>
+              <dd>Optimized match launches through Haze Launcher</dd>
+            </div>
+            <div class="metric">
+              <dt>45%</dt>
+              <dd>Average reduction in setup time per scrim</dd>
+            </div>
+            <div class="metric">
+              <dt>24/7</dt>
+              <dd>Live performance telemetry &amp; compliance checks</dd>
+            </div>
+          </dl>
         </div>
-        <div class="hero__card">
-          <h2>Why Haze?</h2>
-          <ul>
-            <li><span>Design-first installations tailored to your property</span></li>
-            <li><span>Premium hardware backed by 25-year warranties</span></li>
-            <li><span>Performance monitoring and maintenance packages</span></li>
-          </ul>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__panel">
+            <span class="hero__badge">New</span>
+            <h2>Haze Nexus Dashboard</h2>
+            <p>Unify overlays, macros, and mod packs with a zero-latency control center synced across every title you play.</p>
+            <ul class="hero__list">
+              <li>Cross-title profile switching</li>
+              <li>Secure cloud save cloning</li>
+              <li>Anti-cheat safe performance tuning</li>
+            </ul>
+          </div>
+          <div class="hero__orb hero__orb--lg"></div>
+          <div class="hero__orb hero__orb--sm"></div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="services" aria-labelledby="services-title">
+    <!-- ========================================
+         Solutions Overview
+         ======================================== -->
+    <section class="section" id="solutions" aria-labelledby="solutions-title">
       <div class="container">
-        <div class="section__header">
-          <p class="eyebrow">Our capabilities</p>
-          <h2 id="services-title">Solar services built for impact</h2>
-          <p>From residential rooftops to large-scale commercial arrays, Haze engineers systems that hit your energy goals and aesthetics.</p>
+        <div class="section__intro">
+          <p class="eyebrow">Tool suites</p>
+          <h2 id="solutions-title">Built for squads, streamers, and studio labs</h2>
+          <p>Choose modular stacks that snap into your existing workflows—from automated patching to live heatmaps—while keeping every account tournament compliant.</p>
         </div>
         <div class="card-grid">
           <article class="card">
-            <h3>Residential Installations</h3>
-            <p>Custom solar arrays designed to maximize output and seamlessly integrate with your home’s architecture.</p>
+            <h3>Launch &amp; Patch Automation</h3>
+            <p>Skip patch-day chaos with scripted update lanes, asset validation, and rollback support for LAN events.</p>
             <ul>
-              <li>Home energy assessments</li>
-              <li>Permitting and utility coordination</li>
-              <li>Battery and backup integration</li>
+              <li>Parallel game downloads</li>
+              <li>Integrity &amp; anti-cheat sweeps</li>
+              <li>Config templates per title</li>
             </ul>
           </article>
           <article class="card">
-            <h3>Commercial Projects</h3>
-            <p>Scalable solar systems that reduce operating costs and support sustainability commitments.</p>
+            <h3>Performance Intelligence</h3>
+            <p>Overlay frame pacing, latency, and input telemetry with exportable reports for analysts and sponsors.</p>
             <ul>
-              <li>Rooftop and ground-mount arrays</li>
-              <li>Power purchase agreements</li>
-              <li>Monitoring and reporting</li>
+              <li>Real-time GPU/CPU tuning</li>
+              <li>HUD-less highlight captures</li>
+              <li>API feeds for data teams</li>
             </ul>
           </article>
           <article class="card">
-            <h3>Ongoing Support</h3>
-            <p>Performance optimization and proactive maintenance keep your system running at peak efficiency.</p>
+            <h3>Creator Monetization</h3>
+            <p>Deploy branded presets, mod packs, and giveaway keys tied directly to your community storefront.</p>
             <ul>
-              <li>Real-time system analytics</li>
-              <li>Cleaning and upkeep</li>
-              <li>Warranty management</li>
+              <li>One-click preset sharing</li>
+              <li>Secure license distribution</li>
+              <li>Affiliate analytics dashboards</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section--accent" id="process" aria-labelledby="process-title">
-      <div class="container">
-        <div class="section__header">
-          <p class="eyebrow">How we work</p>
-          <h2 id="process-title">A guided path to solar confidence</h2>
+    <!-- ========================================
+         Platform Deep Dive
+         ======================================== -->
+    <section class="section section--contrast" id="platform" aria-labelledby="platform-title">
+      <div class="container contrast__grid">
+        <div>
+          <p class="eyebrow">Platform core</p>
+          <h2 id="platform-title">Nexus OS keeps every title in sync</h2>
+          <p>Haze Nexus abstracts the grind: schedule updates, push optimized configs, and deploy esports-grade presets at scale. Our AI heuristics detect when a publisher patch risks your settings before match time.</p>
+          <ul class="list-check">
+            <li>Role-based workspaces for players, coaches, and tech ops</li>
+            <li>Dynamic compliance modes for tournament servers</li>
+            <li>Offline-ready packages for bootcamps and travel days</li>
+          </ul>
         </div>
-        <ol class="timeline">
-          <li>
-            <h3>Consult &amp; Assess</h3>
-            <p>We start with a detailed site evaluation, energy usage analysis, and financial modeling to determine your best-fit system.</p>
-          </li>
-          <li>
-            <h3>Design &amp; Approve</h3>
-            <p>Our engineers craft a custom plan and 3D renderings so you can visualize the installation before construction.</p>
-          </li>
-          <li>
-            <h3>Install &amp; Energize</h3>
-            <p>Certified crews handle installation, interconnection, and testing—delivering a turnkey system ready to perform.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="section" id="projects" aria-labelledby="projects-title">
-      <div class="container">
-        <div class="section__header">
-          <p class="eyebrow">Recent work</p>
-          <h2 id="projects-title">Featured installations</h2>
-          <p>We balance design, efficiency, and ROI on every project. Explore a few highlights from the Haze portfolio.</p>
-        </div>
-        <div class="project-grid">
-          <article class="project">
-            <div class="project__meta">
-              <span class="project__tag">Commercial</span>
-              <span class="project__location">Portland, OR</span>
+        <div class="contrast__panel">
+          <div class="contrast__header">
+            <span class="contrast__label">Realtime insight</span>
+            <strong>One HUD to rule every lobby</strong>
+          </div>
+          <p>Trigger automations with macros, Discord bots, or API calls. Nexus syncs with Steam, Battle.net, Riot, Xbox, and EA accounts.</p>
+          <dl class="contrast__stats">
+            <div>
+              <dt>150+</dt>
+              <dd>Deep integrations &amp; publisher launchers</dd>
             </div>
-            <h3>Rooftop solar for creative campus</h3>
-            <p>120 kW system offsetting 82% of the facility’s annual usage with remote performance monitoring.</p>
-          </article>
-          <article class="project">
-            <div class="project__meta">
-              <span class="project__tag">Residential</span>
-              <span class="project__location">Seattle, WA</span>
+            <div>
+              <dt>8ms</dt>
+              <dd>Average automation response time</dd>
             </div>
-            <h3>Net-zero ready hillside home</h3>
-            <p>Integrated 14 kW array with Tesla Powerwall backup to ensure reliable power during outages.</p>
-          </article>
-          <article class="project">
-            <div class="project__meta">
-              <span class="project__tag">Municipal</span>
-              <span class="project__location">Boise, ID</span>
-            </div>
-            <h3>Community recreation center</h3>
-            <p>Ground-mount system paired with EV charging, projected to save the city $45K annually.</p>
-          </article>
+          </dl>
         </div>
       </div>
     </section>
 
-    <section class="section" id="testimonials" aria-labelledby="testimonials-title">
+    <!-- ========================================
+         Services
+         ======================================== -->
+    <section class="section" id="services" aria-labelledby="services-title">
       <div class="container">
-        <div class="section__header">
-          <p class="eyebrow">Client stories</p>
-          <h2 id="testimonials-title">What partners say about Haze</h2>
+        <div class="section__intro">
+          <p class="eyebrow">Pro services</p>
+          <h2 id="services-title">White-glove onboarding &amp; live operations</h2>
+          <p>Pair the Haze platform with veteran esports engineers who tailor every workflow to your roster, bootcamp, and broadcast cadence.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service">
+            <h3>Competitive Enablement</h3>
+            <p>Scrim room deployment, device imaging, and competitive policy mapping for pro squads.</p>
+            <ul>
+              <li>Event-ready playbook libraries</li>
+              <li>Role-aware control center presets</li>
+              <li>Performance SLAs for majors</li>
+            </ul>
+          </article>
+          <article class="service">
+            <h3>Creator Studio</h3>
+            <p>Set up monetizable presets, automation triggers, and sponsor-ready overlays that scale with your audience.</p>
+            <ul>
+              <li>Dynamic scene &amp; asset syncing</li>
+              <li>Merch &amp; DLC storefront bundles</li>
+              <li>Audience analytics consultancy</li>
+            </ul>
+          </article>
+          <article class="service">
+            <h3>Enterprise &amp; Labs</h3>
+            <p>Deploy Haze across campus networks, QA labs, and publisher preview programs with full compliance controls.</p>
+            <ul>
+              <li>Automated regression sandboxes</li>
+              <li>Image lifecycle governance</li>
+              <li>Secure credential vaulting</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         Social Proof
+         ======================================== -->
+    <section class="section section--highlight" id="success" aria-labelledby="success-title">
+      <div class="container">
+        <div class="section__intro section__intro--light">
+          <p class="eyebrow">Proof in play</p>
+          <h2 id="success-title">Trusted by teams chasing the podium</h2>
+          <p>Championship orgs, collegiate powerhouses, and global creators rely on Haze for every season cycle.</p>
         </div>
         <div class="testimonial-grid">
           <figure class="testimonial">
             <blockquote>
-              “Haze managed our entire solar transition with clarity and care. We saw savings in the very first billing cycle.”
+              “Nexus shaved 30 minutes off every scrim day and gave coaches a single pane to compare player hardware telemetry.”
             </blockquote>
             <figcaption>
-              <span class="testimonial__name">Taylor Morgan</span>
-              <span class="testimonial__role">Director, Cedar &amp; Pine Studios</span>
+              <span class="testimonial__name">Lena Ortiz</span>
+              <span class="testimonial__role">Director of Performance, Frostbyte Esports</span>
             </figcaption>
           </figure>
           <figure class="testimonial">
             <blockquote>
-              “Their engineering team delivered a system that met strict design standards while exceeding performance projections.”
+              “Our community store tripled conversions once we packaged presets as Haze-ready drops that sync to every viewer’s rig.”
             </blockquote>
             <figcaption>
-              <span class="testimonial__name">Morgan Lee</span>
-              <span class="testimonial__role">Facilities Manager, Horizon Collective</span>
+              <span class="testimonial__name">Maya Chen</span>
+              <span class="testimonial__role">Creator &amp; Founder, GalaxyMods</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote>
+              “Bootcamping overseas used to be guesswork. Haze cloned our entire environment offline so players just sat down and won.”
+            </blockquote>
+            <figcaption>
+              <span class="testimonial__name">Dev Patel</span>
+              <span class="testimonial__role">Technical Coach, Aurora Titans</span>
             </figcaption>
           </figure>
         </div>
       </div>
     </section>
 
+    <!-- ========================================
+         Call to Action
+         ======================================== -->
     <section class="cta" aria-labelledby="cta-title">
       <div class="container cta__grid">
         <div>
-          <h2 id="cta-title">Ready to accelerate your energy goals?</h2>
-          <p>Let’s craft a solar strategy tailored to your usage, budget, and timeline.</p>
+          <p class="eyebrow">Ready up</p>
+          <h2 id="cta-title">Spin up Haze for your roster in 48 hours</h2>
+          <p>We’ll audit your current tool stack, port configs, and set automation guardrails before your next qualifier.</p>
         </div>
-        <a href="#contact" class="button button--light">Book a discovery call</a>
+        <a href="games.html" class="button button--light">View supported games</a>
       </div>
     </section>
 
-    <section class="section" id="contact" aria-labelledby="contact-title">
+    <!-- ========================================
+         Contact
+         ======================================== -->
+    <section class="section section--contact" id="contact" aria-labelledby="contact-title">
       <div class="container contact">
-        <div class="section__header">
-          <p class="eyebrow">Let’s collaborate</p>
-          <h2 id="contact-title">Tell us about your project</h2>
-          <p>Complete the form and a solar strategist will reach out within one business day.</p>
+        <div class="section__intro">
+          <p class="eyebrow">Talk with Haze</p>
+          <h2 id="contact-title">Let’s engineer your competitive edge</h2>
+          <p>Share your goals and we’ll craft a deployment roadmap, licensing plan, and automation blueprint.</p>
+          <div class="contact__info">
+            <p><strong>HQ:</strong> 415 Reactor Way, Suite 900, Seattle, WA</p>
+            <p><strong>Email:</strong> ops@hazetools.gg</p>
+            <p><strong>Phone:</strong> (206) 555-3477</p>
+          </div>
         </div>
         <form class="contact__form" action="#" method="post">
           <div class="form-grid">
             <label class="form-field">
               <span>Name</span>
-              <input type="text" name="name" required />
+              <input type="text" name="name" autocomplete="name" required />
             </label>
             <label class="form-field">
               <span>Email</span>
-              <input type="email" name="email" required />
+              <input type="email" name="email" autocomplete="email" required />
             </label>
             <label class="form-field">
-              <span>Phone</span>
-              <input type="tel" name="phone" />
+              <span>Organization</span>
+              <input type="text" name="organization" autocomplete="organization" />
             </label>
             <label class="form-field">
-              <span>Project type</span>
-              <select name="project-type">
-                <option value="residential">Residential</option>
-                <option value="commercial">Commercial</option>
-                <option value="municipal">Municipal</option>
+              <span>Role</span>
+              <input type="text" name="role" autocomplete="organization-title" />
+            </label>
+            <label class="form-field">
+              <span>Primary game</span>
+              <select name="primary-game">
+                <option value="fortnite">Fortnite</option>
+                <option value="valorant">Valorant</option>
+                <option value="cs2">Counter-Strike 2</option>
+                <option value="lol">League of Legends</option>
+                <option value="apex">Apex Legends</option>
                 <option value="other">Other</option>
               </select>
             </label>
+            <label class="form-field">
+              <span>Deployment window</span>
+              <input type="month" name="timeline" />
+            </label>
+            <label class="form-field form-field--full">
+              <span>Project details</span>
+              <textarea name="details" rows="5" placeholder="Tell us about your roster, content plans, or upcoming events"></textarea>
+            </label>
           </div>
-          <label class="form-field form-field--full">
-            <span>Project details</span>
-            <textarea name="details" rows="5" placeholder="Tell us about your goals, timeline, and questions"></textarea>
-          </label>
-          <button type="submit" class="button">Send message</button>
+          <button type="submit" class="button">Submit request</button>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
+  <!-- ========================================
+       Global Footer
+       ======================================== -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container footer__grid">
       <div class="footer__brand">
-        <span class="brand__mark">H</span>
-        <span>Haze Energy</span>
+        <span class="brand__mark" aria-hidden="true">H</span>
+        <div>
+          <span class="brand__title">Haze</span>
+          <span class="brand__subtitle">Game Tools</span>
+        </div>
       </div>
       <nav aria-label="Footer navigation">
         <ul class="footer__nav">
           <li><a href="#top">Home</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#platform">Platform</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#process">Process</a></li>
+          <li><a href="games.html">Game catalog</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <p class="footer__legal">&copy; <span id="year"></span> Haze Energy Solutions. All rights reserved.</p>
+      <div class="footer__meta">
+        <p>&copy; <span id="year"></span> Haze Labs. All rights reserved.</p>
+        <a href="mailto:ops@hazetools.gg">ops@hazetools.gg</a>
+      </div>
     </div>
   </footer>
 
